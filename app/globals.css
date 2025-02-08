@@ -1,0 +1,99 @@
+/* globals.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  background-color: #f4f4f7;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: #111;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(11, 1fr); /* 10 columns + 1 for row headers */
+  gap: 5px;
+  grid-auto-rows: minmax(50px, auto);
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  font-weight: 600;
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+
+.rowHeader {
+  text-align: right;
+  font-weight: 600;
+  background-color: #e0e0e0;
+  padding: 10px;
+}
+
+.cell {
+  padding: 8px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.cell:focus {
+  border-color: #007aff;
+  outline: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  font-size: 14px;
+}
+
+input[type="text"]:disabled {
+  background-color: #f4f4f7;
+}
+
+input:disabled {
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(6, 1fr); /* Adjusted grid layout for smaller screens */
+  }
+
+  .header,
+  .rowHeader {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .cell {
+    font-size: 12px;
+    padding: 6px;
+  }
+}
