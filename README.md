@@ -1,3 +1,19 @@
+This project is a dynamic and responsive functional spreadsheet app developed using Next.js. It allows users to input data and formulas into a grid system, where custom spreadsheet functions such as sum(), average(), and median() are supported. The app supports mathematical operations like addition, subtraction, multiplication, and division, all evaluated in real time using a custom formula parser.
+
+Key features:
+
+Dynamic Formula Evaluation: Custom formulas (e.g., =SUM(A1:A10)) are parsed and evaluated with support for mathematical operations and built-in functions.
+Responsive Design: The layout adapts seamlessly across devices, from desktops to mobile devices, ensuring a user-friendly experience on any screen size.
+Apple-Inspired Design: The UI adopts Apple's minimalistic design philosophy, with clean lines, subtle interactions, and an intuitive user interface.
+Real-Time Interaction: Users can input data and instantly see results, with the app updating in real time as cells are modified.
+Technologies used:
+
+Next.js: Provides server-side rendering and static site generation, ensuring fast load times and improved performance.
+CSS Grid Layout: Utilized for building the responsive grid structure for the spreadsheet cells, which dynamically adjusts depending on the screen size.
+JavaScript Functions: Custom spreadsheet functions like sum(), average(), and more are implemented using JavaScript, offering flexibility for users to perform complex calculations.
+Minimalistic Styling: Styled using custom global CSS and responsive media queries to ensure a clean, modern look that adjusts for all screen sizes.
+This project is designed to be a flexible tool for real-time calculations and supports a wide range of functionalities, making it suitable for both personal and professional use in data-driven tasks.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
